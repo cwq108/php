@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
         libpng12-dev \
-    && docker-php-ext-install zlib \
+    #&& docker-php-ext-install zlib \
 	&& mkdir /var/run/sshd \
 	&& echo "root:123456" | chpasswd
 EXPOSE 22
